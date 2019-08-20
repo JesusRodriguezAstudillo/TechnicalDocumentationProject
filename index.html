@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @media (min-width: 769px) {
+                nav {
+                    font-size: 18pt !important;
+                }
+
+                .navbar-title {
+                    font-size: 18pt !important;
+                }
+            }
+
+            @media (max-width: 768px) {
+                nav {
+                    font-size: 7pt !important;
+                }
+
+                .navbar-title {
+                    font-size: 7pt !important;
+                }
+
+                header {
+                    font-size: 16pt !important;
+                }
+
+                body {
+                    font-size: 10pt !important;
+                }
+
+                .code-section {
+                    width: 100% !important;
+                    font-size: 8pt !important;
+                    padding: 5px 0 5px 5px !important;
+                }
+            }
+
+            @media (min-width: 1700px) {
+                body {
+                    font-size: 24pt !important;
+                }
+
+                nav {
+                    font-size: 32pt !important;
+                }
+
+                .navbar-title {
+                    font-size: 34pt !important;
+                }
+
+                header {
+                    font-size: 32pt !important;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            body {
+                font-family: Calibri, 'Trebuchet MS', sans-serif;
+                height: 100%;
+                width: 100%;
+            }
+
+            header {
+                font-size: 22pt;
+                border-bottom: 2px solid black;
+                margin-bottom: 1vw;
+            }
+
+            nav {
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                font-size: 14pt;
+                width: 20vw;
+                border-right: 2px solid black;
+                overflow: auto;
+            }
+
+            .code-section {
+                width: 45vw;
+                background-color: black;
+                color: #41FF00;
+                padding: 1em;
+                border-radius: 10px;
+            }
+
+            .main-section {
+                padding: 1em 1em 0 0;
+            }
+
+            .navbar-title {
+                margin: 1vw 0 0 2vw;
+                border: none;
+            }
+
+            #main-doc {
+                margin-left: 22vw;
+                width: 75vw;
+            }
+
+            #navbar ul {
+                color: white;
+                padding: 0;
+                background: rgb(71, 71, 71);
+            }
+
+            #navbar li {
+                border-bottom: 2px solid lightgray;
+                list-style: none;
+                padding: .3em 0 .3em .5em;
+                position: relative;
+                left: 0;
+            }
+
+            #navbar li:hover {
+                background-color: black;
+                color: #41FF00;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        </script>
+        <nav id="navbar">
+            <header class="navbar-title">C# Documentation</header>
+            <ul style="border-top: 2px solid lightgray">
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Features_of_C#">Features of C#</a></li>
+                <li><a class="nav-link" href="#C#_Program_Structure">C# Program Structure</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
+                <li><a class="nav-link" href="#Methods">Methods</a></li>
+                <li><a class="nav-link" href="#Classes">Classes</a></li>
+                <li><a class="nav-link" href="#Sample_Program">Sample Program</a></li>
+                <li><a class="nav-link" href="#References">References</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>C# is a modern, general-purpose, object-oriented programming language developed by Microsoft and approved by European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO).
+                     C# was developed by Anders Hejlsberg and his team during the development of .Net Framework. 
+                     C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures.</p>
+            </section>
+            <section class="main-section" id="Features_of_C#">
+                <header>Features of C#</header>
+                <p>C# is a popular language because</p>
+                <ul>
+                    <li>It is an object oriented language.</li>
+                    <li>It is component oriented.</li>
+                    <li>It is a structured Language.</li>
+                    <li>It can be compiled in a large variety of computers.</li>
+                    <li>It is part of the .Net Framework.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="C#_Program_Structure">
+                <header>C# Program Structure</header>
+                <div class="code-section">
+                    <code>using System; <br> <br>
+                        namespace HellowWorld { <br>
+                            &nbsp; class HelloWorld { <br>
+                                &nbsp; &nbsp;static void Main(string[] args) { <br>
+                                    &nbsp; &nbsp; &nbsp;Console.WriteLine("Hello World"); <br>
+                                &nbsp; &nbsp;} <br>
+                            &nbsp;} <br>
+                        }
+                    </code>
+                </div>
+                <p>When executed, this short program will print</p>
+                <div class="code-section">
+                    <code>Hello World</code>
+                </div>
+                <h3>The parts of the program.</h3>
+                <ul>
+                    <li><strong>using System;</strong> This statement tells the program which namespaces to include.</li>
+                    <li><strong>namespace HelloWorld</strong> namespace is a collection of classes. In this case, the names of the collection is HelloWorld.</li>
+                    <li><strong>class HelloWorld</strong> This is a class declaration. The class keyword defines a template for an object which usually contains member variables and methods.</li>
+                    <li><strong>Console.WriteLine("Hello World");</strong> This statement tells the program to print the string Hello World to the console. The compiler uses the function from the System namespace to print the string.</li>
+                </ul>
+                <p>To further understand C#, first we will need to look at the basics in the next sections.</p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C# has a specific type, which determines the size and layout of the variable's memory the range of values that can be stored within that memory and the set of operations that can be applied to the variable.</p>
+                <p>Varibles are declared in this manner:</p>
+                <div class="code-section">
+                    <code>&lt;data_type&gt; &lt;variable_name&gt;;</code>
+                </div>
+                <p>In addition to declarations, variables can be initialized like this</p>
+                <div class="code-section">
+                    <code>int a = 1; <br>
+                        double b = 3.14; <br>
+                        char c = 'c';
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="Datatypes">
+                <header>Datatypes</header>
+                <p>The variables in C#, are categorized into the following types</p>
+                <ul>
+                    <li>Value Types</li>
+                    <li>Reference Types</li>
+                    <li>Pointer Types</li>
+                </ul>
+                <h3>Value Types</h3>
+                <p>Value type variables can be assigned a value directly. They are derived from the class System.ValueType.
+                     The value types directly contain data. Some examples are int, char, and float, which stores numbers, alphabets, and floating point numbers, respectively. When you declare an int type, the system allocates memory to store the value.</p>
+                <h3>Reference Types</h3>
+                <p>The reference types do not contain the actual data stored in a variable, but they contain a reference to the variables. In other words, they refer to a memory location. Using multiple variables, the reference types can refer to a memory location. If the data in the memory location is changed by one of the variables, the other variable automatically reflects this change in value. Example of built-in reference types are: object, dynamic, and string.</p>
+                <h3>Pointer Types</h3>
+                <p>Pointer type variables store the memory address of another type. Pointers in C# have the same capabilities as the pointers in C or C++.</p>
+            </section>
+            <section class="main-section" id="Methods">
+                <header>Methods</header>
+                <p>A method is a group of statements that together perform a task. Every C# program has at least one class with a method named Main. To use a method, you need to define the method and call the method.</p>
+                <h3>Defining Methods</h3>
+                <p>When you define a method, you basically declare the elements of its structure. The syntax for defining a method in C# is</p>
+                <div class="code-section">
+                    <code>&lt;Access Specifier&gt; &lt;Return Type&gt; &lt;Method Name&gt;(Parameter List){<br>
+                        &nbsp;Method Body <br>
+                    }
+                    </code>
+                </div>
+                <h3>The parts of the code</h3>
+                <ul>
+                    <li><strong>Access Specifier</strong> − This determines the visibility of a variable or a method from another class.</li>
+                    <li><strong>Return Type</strong> - A method may return a value. The return type is the data type of the value the method returns. If the method is not returning any values, then the return type is void.</li>
+                    <li><strong>Method Name</strong> − Method name is a unique identifier and it is case sensitive. It cannot be same as any other identifier declared in the class.</li>
+                    <li><strong>Parameter List</strong> − Enclosed between parentheses, the parameters are used to pass and receive data from a method. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.</li>
+                    <li><strong>Method Body</strong> − This contains the set of instructions needed to complete the required activity.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Classes">
+                <header>Classes</header>
+                <p>When you define a class, you define a blueprint for a data type. This does not actually define any data, but it does define what the class name means. That is, what an object of the class consists of and what operations can be performed on that object. Objects are instances of a class. The methods and variables that constitute a class are called members of the class.</p>
+                <h3>Defining a Class</h3>
+                <div class="code-section">
+                    <code>&lt;Access Specifier&gt; class class_name { <br>
+                            &nbsp;// member variables<br>
+                            &nbsp;&lt;Access Specifier&gt; &lt;Data Type&gt; variable_name;<br><br>
+                    
+                            &nbsp;// member methods<br>
+                            &nbsp;&lt;Access Specifier&gt; &lt;return type&gt; method_name(parameter list) { <br>
+                            &nbsp;// method body<br>
+                            &nbsp;}<br>
+                        }
+                    </code>
+                </div>
+                <p>Note that</p>
+                <ul>
+                    <li>Access specifiers specify the access rules for the members as well as the class itself. If not mentioned, then the default access specifier for a class type is internal. Default access for the members is private.</li>
+                    <li>Data type specifies the type of variable, and return type specifies the data type of the data the method returns, if any.</li>
+                    <li>To access the class members, you use the dot (.) operator.</li>
+                    <li>The dot operator links the name of an object with the name of a member.</li>
+                </ul>
+                <p>With the information that you have attained so far, you can start to write simple programs that can be run through the terminal. Next we will see a sample program.</p>
+            </section>
+            <section class="main-section" id="Sample_Program">
+                <header>Sample Program</header>
+                <div class="code-section">
+                    <code>using System; <br> <br>
+                        namespace HellowWorld { <br>
+                            &nbsp;class Square { <br>
+                                &nbsp;&nbsp;public double side;<br>
+                                &nbsp;&nbsp;public double area(double side) { <br>
+                                    &nbsp;&nbsp;&nbsp; return side * side; <br>
+                                &nbsp;&nbsp;} <br> <br>
+                            &nbsp; &nbsp;static void Main(string[] args) { <br>
+                                &nbsp; &nbsp; &nbsp;Square s = new Square();<br><br>
+                                &nbsp; &nbsp; &nbsp;s.side = 7;<br><br>
+                        
+                                &nbsp; &nbsp; &nbsp;Console.WriteLine("The area of a square with a side of 7 is "); <br>
+                                &nbsp; &nbsp; &nbsp;Console.WriteLine(s.area(s.side)); <br>
+                            &nbsp; &nbsp;} <br>
+                            &nbsp;}<br>
+                        }
+                    </code>
+                </div>
+                <p>When run, the program will output</p>
+                <div class="code-section">
+                    <code>49</code>
+                </div>
+                <p>With all this information, you can write simple programs like the one above. However, the C# language is much more robust and intricate. If you would like to learn more about C#, follow the link in the <a href="#References">references</a> section to access a more in depth tutorial.</p>
+            </section>
+            <section class="main-section" id="References">
+                <header>References</header>
+                <p>All documentation taken from <a href="https://www.tutorialspoint.com/csharp/index.htm">tutorialspoint</a>.</p>
+            </section>
+        </main>
+    </body>
+</html>
